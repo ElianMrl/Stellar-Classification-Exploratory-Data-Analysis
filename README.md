@@ -130,7 +130,8 @@ Finally, we reached the stage of measuring the performance of our top three clas
 Classification Report (classification_report(y_test, y_pred)): This report gave us detailed insights into the precision, recall, and F1-score for each class.
 - **Confusion Matrix (confusion_matrix(y_test, y_pred)):** This matrix was useful in visualizing the performance of the models in terms of correctly and incorrectly classified instances.
 
-#### **Results**
+---
+### **Results**
 
 {img1}
 In our analysis, we observed that certain features exhibited a Right Skewed Distribution. Specifically, 'field_ID' and 'redshift' fell into this category.
