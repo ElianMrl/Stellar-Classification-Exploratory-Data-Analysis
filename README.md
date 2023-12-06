@@ -17,7 +17,7 @@ This project was a collaborative effort and benefited immensely from the contrib
 ---
 ### Important Links 
 - **[Video: Presentation of the Stellar CLlassification DAE](/)**
-- **[GitHub Repository](/)**
+- **[GitHub Repository](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/tree/main)**
 - **Thirukumaran Velayudhan**
   - [Milestone 2 Proposal](/)
 - **Elian Morales Pina**
@@ -133,35 +133,44 @@ Classification Report (classification_report(y_test, y_pred)): This report gave 
 ---
 ### **Results**
 
-{img1}
+![img1](img/img1.png)
+
 In our analysis, we observed that certain features exhibited a Right Skewed Distribution. Specifically, 'field_ID' and 'redshift' fell into this category.
 - Log Transformation: We found that log transformation was effective for right-skewed data. However, it's important to note that this technique only works for positive values. Therefore, we ensured that the values, especially the delta values, were shifted to be positive before applying this transformation.
 - Handling 'field_ID': Despite 'field_ID' being right-skewed, we decided not to perform any transformations on it. Our analysis suggested that 'field_ID' might be a categorical value, and transforming it could distort its categorical nature and significance.
 
-{img2}
+![img2](img/img2.png)
+
 Our data showed a clear imbalance among the classes. Galaxies were more frequent than both stars and QSOs. QSOs appeared less frequently compared to galaxies and stars, aligning with the expectation that QSOs are rarer and more distant celestial objects.
 
-{img3}
+![img3](img/img3.png)
+
 When examining the correlation between the target column ('class') and other features, we found that 'u' and 'g' had the highest correlation values with 'class':
 - 'u': 0.27
 - 'g': 0.23
 
-{img4}
+![img4](img/img4.png)
+
 Our investigation into the relationship of the 'u' feature with other features revealed challenges in classifying the class of the records. However, a notable exception was observed when comparing 'u' with 'redshift'.
 
-{img5}
+![img5](img/img5.png)
+
 Based on our findings, we decided to further explore 'redshift' against other features. This led to an important discovery: 'redshift' emerged as the most significant feature for classifying records as 'star', 'galaxy', or 'qso'.
 
-{img6}
+![img6](img/img6.png)
+
 As part of our analysis, we employed the RandomForestClassifier, a robust machine learning algorithm, to assess the importance of different features in classifying the records in our dataset. This method provided us with an importance score for each feature, enabling us to understand their relative significance in the classification process.
 - The results from the RandomForestClassifier were quite revealing. They confirmed our previous observations regarding the importance of the 'redshift' feature. In fact, 'redshift' emerged as the most crucial feature for classification, standing out significantly among the others.
 
-{img7}
+![img7](img/img7.png)
+
 In our efforts to improve the distribution of the non-categorical columns, we experimented with various transformations such as log(X), square, and square root. However, these transformations did not yield the improvements we were hoping for in terms of achieving a more normalized distribution. The transformed distributions of these columns remained largely unchanged, indicating that these methods were not effective for our particular dataset.
 - Interestingly, we observed that the columns 'Plate' and 'spec_obj_ID', which are categorical in nature, did show a bell-shaped distribution after applying transformations. However, given their categorical status, applying such numerical transformations is not appropriate. These transformations could distort the inherent categorical information and lead to misleading results.
 - On a positive note, the distribution of the 'redshift' column showed some improvement after applying a square root transformation. This transformation made the distribution of 'redshift' slightly more normalized, which could potentially enhance its utility in our classification models.
 
 **Balancing the Dataset with SMOTE**
+
+![img8](img/img8.png)
 
 We then addressed the issue of class imbalance in our dataset by using the Synthetic Minority Over-sampling Technique (SMOTE). This approach successfully balanced the dataset by equalizing the number of labels across different classes. As a result, each class (star, galaxy, QSO) was equally represented in our records.
 
@@ -170,7 +179,8 @@ While SMOTE effectively resolved the imbalance, it introduced two potential chal
 - **Risk of Overfitting:** The artificial increase in data points for minority classes might lead to models that are too specifically tailored to the training data, reducing their generalizability.
 - **Increased Computational Time:** The enlarged dataset resulted in longer computation times when fitting models, as there was more data to process.
 
-{img9}
+![img9](img/img9.png)
+
 **After running some quick and dirty models with the default hyperparameters we got the following Evaluation of the Models:**
 **Random Forest:**
 - **Mean Score:** 0.9763
@@ -208,14 +218,17 @@ The Multi-Layer Perceptron (MLP) Classifier emerged as the standout performer am
 - **Accuracy:** The MLPClassifier achieved an accuracy of 91.14%. This high accuracy indicates that the model was able to correctly classify a significant majority of the instances in the test dataset.
 - **ROC-AUC Score:** The model scored 98.75% in the ROC-AUC metric. This high score reflects the model's strong capability in distinguishing between different classes, a crucial aspect in classification problems.
 
-{img10}
+![img10](img/img10.png)
+
 **Overfitting in Other Models**
 
 On the other hand, we observed a concerning trend in the rest of the models. Despite showing promising results on the training data, their performance dropped significantly when applied to the test data. This discrepancy is a classic indication of overfitting.
 
-####Final Results: Adjustments and Model Performance
+#### Final Results: Adjustments and Model Performance
 
 **Rationale for Data Re-Split**
+
+![img11](img/img11.png)
 
 In response to the overfitting issue observed in our initial model evaluations, we decided to take a step back and re-split the data. This decision was driven by the need to prevent data snooping, a scenario where the model inadvertently learns specific characteristics of the test data, thus compromising its ability to generalize. The new split allowed us to re-tune our models and adjust our data processing methods with fresh, unseen data, ensuring a more robust evaluation of model performance.
 
