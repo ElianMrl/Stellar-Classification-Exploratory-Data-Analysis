@@ -195,7 +195,8 @@ After running the pipeline testing different data processing methods (using a gr
 - For Dealing with null values, the best method is the replacing Null values with hte median
 - Rebalancing the data uisng SMOTE
 
-#### Results: Model Performance and Overfitting Issue
+---
+### Results: Model Performance and Overfitting Issue
 
 **Outcome of Fine-Tuning Models**
 
@@ -226,7 +227,8 @@ After making these adjustments, we conducted another round of evaluations on the
 - **Gradient Boosting Classifier:** Similar to the Random Forest, the Gradient Boosting Classifier also exhibited subpar accuracy. This was another indication that, like the Random Forest model, it was not adequately equipped to handle the complexity or specific characteristics of the test dataset.
 - **MLPClassifier:** The standout performer in our final evaluation was the MLPClassifier. It achieved an accuracy of 94.87% and an impressive ROC-AUC score of 99.41%. These metrics indicated a significant improvement in the model's ability to correctly classify instances and effectively distinguish between classes. The high ROC-AUC score, in particular, suggested that the model had a strong capability in handling both classes proportionately well.
 
-#### Conclusion:
+---
+### Conclusion:
 
 As a part of our comprehensive analysis, we decided to compare our approach with those of other Kaggle users who had also worked on this dataset. The primary objective of this comparison was to evaluate the effectiveness of our intensive data processing methods against more straightforward approaches used by others.
 
