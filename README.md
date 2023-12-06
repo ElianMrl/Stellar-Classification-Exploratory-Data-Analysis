@@ -19,9 +19,9 @@ This project was a collaborative effort and benefited immensely from the contrib
 - **[Video: Presentation of the Stellar CLlassification DAE](/)**
 - **[GitHub Repository](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/tree/main)**
 - **Thirukumaran Velayudhan**
-  - [Milestone 2 Proposal](/)
+  - [Milestone 2 Proposal](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/blob/main/documents/Milestone%202%20-%20Thirukumaran%20Velayudhan.pdf)
 - **Elian Morales Pina**
-  -  [Milestone 2 Proposal](/)
+  -  [Milestone 2 Proposal](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/blob/main/documents/Milestone%202%20-%20Elian%20Morales%20Pina.pdf)
 
 ---
 ### Report
@@ -238,6 +238,9 @@ After making these adjustments, we conducted another round of evaluations on the
 
 - **Random Forest Classifier:** Although there was a slight improvement in the Random Forest model's performance, it still struggled with accuracy. This indicated that despite fine-tuning, the model was unable to effectively generalize to the new test data.
 - **Gradient Boosting Classifier:** Similar to the Random Forest, the Gradient Boosting Classifier also exhibited subpar accuracy. This was another indication that, like the Random Forest model, it was not adequately equipped to handle the complexity or specific characteristics of the test dataset.
+
+![img12](img/img12.png)
+
 - **MLPClassifier:** The standout performer in our final evaluation was the MLPClassifier. It achieved an accuracy of 94.87% and an impressive ROC-AUC score of 99.41%. These metrics indicated a significant improvement in the model's ability to correctly classify instances and effectively distinguish between classes. The high ROC-AUC score, in particular, suggested that the model had a strong capability in handling both classes proportionately well.
 
 ---
@@ -251,6 +254,7 @@ As a part of our comprehensive analysis, we decided to compare our approach with
 - **Implications on Data Processing:** This comparison led to a significant revelation about the dataset in question. It indicated that for this specific dataset, employing extremely detailed and intensive data processing methods did not result in a substantial improvement in the performance of the machine learning models. Instead, it primarily increased the computational time required for the Data Exploratory Analysis.
 
 - **Efficiency vs. Effectiveness:** The similar performance outcomes suggest that a more streamlined, less computationally intensive approach could be equally effective for this type of data. This insight is particularly valuable in contexts where computational resources are limited or when rapid analysis is required.
+
 
 
 
