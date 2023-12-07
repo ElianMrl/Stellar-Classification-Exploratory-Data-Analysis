@@ -16,7 +16,7 @@ This project was a collaborative effort and benefited immensely from the contrib
 
 ---
 ### Important Links 
-- **[Video: Presentation of the Stellar CLlassification DAE](/)**
+- **[Video: Presentation of the Stellar CLlassification DAE](https://urldefense.com/v3/__https://njit.webex.com/njit/ldr.php?RCID=7da11980a203273090524b2af8c0cc09__;!!DLa72PTfQgg!KI50kkLgmqFfb6mnd-WuPpJQYp4Yegx5Pm7KS0tjNaQL4lJ60rK7Nqxm0jf2q2NS98xwYzh8VFfITPED_dU$)**
 - **[GitHub Repository](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/tree/main)**
 - **Thirukumaran Velayudhan**
   - [Milestone 2 Proposal](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/blob/main/documents/Milestone%202%20-%20Thirukumaran%20Velayudhan.pdf)
