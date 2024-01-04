@@ -15,15 +15,6 @@ Through this analytical journey, we aim to shed light on the nuances of data pro
 This project was a collaborative effort and benefited immensely from the contributions of Thirukumaran Velayudhan and Elian Morales Pina. Their expertise in Machine Learning and Data Exploratory Analysis techiques was invaluable in the analysis and interpretation of the dataset.
 
 ---
-### Important Links 
-- **[Video: Presentation of the Stellar CLlassification DAE](https://njit.webex.com/recordingservice/sites/njit/recording/98bd2ac476dd103c9fbd3ed0204df0e7/playback)**
-- **[GitHub Repository](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/tree/main)**
-- **Thirukumaran Velayudhan**
-  - [Milestone 2 Proposal](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/blob/main/documents/Milestone%202%20-%20Thirukumaran%20Velayudhan.pdf)
-- **Elian Morales Pina**
-  -  [Milestone 2 Proposal](https://github.com/ElianMrl/Stellar-Classification-Exploratory-Data-Analysis/blob/main/documents/Milestone%202%20-%20Elian%20Morales%20Pina.pdf)
-
----
 ### Report
 
 #### **Methodology** 
